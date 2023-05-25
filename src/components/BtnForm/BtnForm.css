@@ -1,0 +1,12 @@
+.btn-formulario{
+    margin-top: 1rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: #6278F7;
+    padding: 1.5rem 2rem;
+    width: 13vw;
+    font-family: 'Montserrat';
+    color: #Ffffff;
+    font-size: 20;
+    font-weight: 700;
+}

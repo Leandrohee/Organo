@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Sigmar&display=swap');
+
+.formulario{
+    background-color: #F6F6F6;
+    margin: 2rem 10vh;
+    padding: 3rem 3rem 1rem 3rem;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
+}
+.titulo-formulario{
+    font-family:'prata';
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #212121;
+    margin: 0;
+}
