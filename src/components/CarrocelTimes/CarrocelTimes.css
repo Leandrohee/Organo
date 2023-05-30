@@ -1,0 +1,38 @@
+ @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+.div-carrocel{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 0;
+    height: 27.375rem;
+    background-color: antiquewhite;
+}
+
+.div-carrocel h3{
+    font-family: 'Prata',serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #212121;
+    margin: 2.125rem 0 0 0;
+}
+
+.div-carrocel hr{
+    width: 2rem;
+    height: 0.25rem;
+    background-color: black;
+    border: 0;
+    margin: 0.625rem 0 0 0; 
+}
+.ul-carrocel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    max-height: 100%;
+    margin: 2.375rem 0 0 0;
+}
+
+
+

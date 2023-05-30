@@ -1,11 +1,15 @@
 import './TextForm.css'
 
 function TextForm(props){
-    console.log(props);
+
+    function aoDigitar(event){                                 //FUNCAO EH CHAMADO QUANDO DIGITO ALGO 
+        props.textoAlterado(event.target.value) 
+    }     
+    
     return(
         <div className='text-form'>
-            <label>{props.name}</label>
-            <input type={props.type} placeholder={props.placeholder} required></input>
+            <label>{props.label}</label>
+            <input onChange={aoDigitar} type={props.type} placeholder={props.placeholder} required></input>
         </div>
     )
 }

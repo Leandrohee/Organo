@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+.lista-suspensa label{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 1.5rem 0 0.2rem 0;
+}
+
+.lista-suspensa select{
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border: 0;
+    padding-left: 1rem ;
+    background-color: #fff;
+    box-sizing: border-box;       /*MUITO IMPORTANTE, LIMITA O TAMANHO DO INPUT PRA NAO FICAR SOBRESALENTE NA TELA*/
+}
