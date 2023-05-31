@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const time =[ 
+  const time =[                                                                                                                     //Aqui tem um array time + cores
     {
       nome:'Programação',
       corFundo: '#D9F7E9',
@@ -34,7 +34,7 @@ function App() {
     {
       nome:"Mobile",
       corFundo:"#FFF5D9",
-      corBox:"#FFF5D9",
+      corBox:"#FFBA05",
     },
     {
       nome:"Inovação e Gestão",
@@ -43,7 +43,7 @@ function App() {
     },
   ]
   
-  const [colaboradores, setColaboradores] = useState([]);
+  const [colaboradores, setColaboradores] = useState([]);                                                                           //Aqui tem um array que veio do form
 
   function addNovoColaborador(colaborador){
     setColaboradores([...colaboradores,colaborador])
@@ -59,7 +59,7 @@ function App() {
           h3={time.nome} 
           colorDivMaior={time.corFundo} 
           colorDivMenor={time.corBox} 
-          colab={colaboradores.filter(element => element.time == time.nome)}                                                      //Aqui envia somente os box filtrados
+          colab={colaboradores.filter(element => element.time === time.nome)}                                                      //Aqui envia somente os box daquele carrocel
           teste={time.nome}                                                                                                       //Somente para pegar o nome do time e testar
         />)}
     </div>

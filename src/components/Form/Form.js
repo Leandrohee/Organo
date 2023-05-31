@@ -20,6 +20,10 @@ function Form(props){
             imagem,
             time
         })
+        setNome("")                     //Apaga o campo nome após submit
+        setCargo("")                    //Apaga o campo cargo após submit
+        setImagem("")                   //Apaga o campo imagem após submit
+        setTime("")
     }
 
     return(
@@ -29,23 +33,27 @@ function Form(props){
                 label="Nome"
                 type="text" 
                 placeholder="Digite seu nome"
+                value= {nome}
                 textoAlterado= {valor => setNome(valor)}
             />
             <TextForm 
                 label="Cargo" 
                 type="text" 
                 placeholder="Digite seu cargo"
+                value= {cargo}
                 textoAlterado = {valor => setCargo(valor)}
                 />
             <TextForm 
                 label="Imagem" 
                 type="text" 
                 placeholder="Informe o endereço da imagem"
+                value= {imagem}
                 textoAlterado={valor => setImagem(valor)}
                 />
             <ListaSuspensa 
                 label="Time" 
                 itens= {props.nomeDosTimes}
+                value = {time}
                 textoAlterado= {valor => setTime(valor)} 
             />
             <BtnForm name="Criar card"/>

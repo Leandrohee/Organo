@@ -9,7 +9,7 @@ function TextForm(props){
     return(
         <div className='text-form'>
             <label>{props.label}</label>
-            <input onChange={aoDigitar} type={props.type} placeholder={props.placeholder} required></input>
+            <input value={props.value} onChange={aoDigitar} type={props.type} placeholder={props.placeholder} required></input>
         </div>
     )
 }
