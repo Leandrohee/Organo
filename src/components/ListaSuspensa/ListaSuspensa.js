@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./ListaSuspensa.css"
 
 function ListaSuspensa(props){
